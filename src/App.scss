@@ -29,6 +29,7 @@ $input-focus-box-shadow: $input-box-shadow; // hack to get upgrade to paragon 4.
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #F0F8FF;
 
   main {
     flex-grow: 1;

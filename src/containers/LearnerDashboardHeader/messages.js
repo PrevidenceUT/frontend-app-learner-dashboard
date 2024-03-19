@@ -36,6 +36,16 @@ const messages = defineMessages({
     defaultMessage: 'Account',
     description: 'The text for the user menu Account navigation link.',
   },
+  contactSupport: {
+    id: 'learnerVariantDashboard.menu.contactSupport.label',
+    defaultMessage: 'Contact Support',
+    description: 'The text for the user menu Contact Support navigation link.',
+  },
+  referYourCompany: {
+    id: 'learnerVariantDashboard.menu.referYourCompany.label',
+    defaultMessage: 'Refer your Company',
+    description: 'The text for the user menu Refer your Company navigation link.',
+  },
   orderHistory: {
     id: 'learnerVariantDashboard.menu.orderHistory.label',
     defaultMessage: 'Order History',

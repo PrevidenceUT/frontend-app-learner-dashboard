@@ -4,7 +4,8 @@ import { useIntl } from '@edx/frontend-platform/i18n';
 
 import { reduxHooks } from 'hooks';
 
-import { getConfig } from '@edx/frontend-platform';
+// import { getConfig } from '@edx/frontend-platform';
+import logo from 'assets/logo.png';
 import messages from './messages';
 
 export const BrandLogo = () => {
@@ -12,10 +13,11 @@ export const BrandLogo = () => {
   const dashboard = reduxHooks.useEnterpriseDashboardData();
 
   return (
-    <a href={dashboard?.url || '/'} className="mx-auto">
+    <a href={dashboard?.url || '/learner-dashboard/'} className="mx-auto">
       <img
         className="logo py-3"
-        src={getConfig().LOGO_URL}
+        // src={getConfig().LOGO_URL}
+        src={logo}
         alt={formatMessage(messages.logoAltText)}
       />
     </a>

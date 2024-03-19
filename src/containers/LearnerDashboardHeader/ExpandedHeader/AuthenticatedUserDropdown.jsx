@@ -7,6 +7,7 @@ import { AvatarButton, Dropdown, Badge } from '@edx/paragon';
 
 import { reduxHooks } from 'hooks';
 
+import profileImage from 'assets/profile.png';
 import messages from '../messages';
 
 export const AuthenticatedUserDropdown = () => {
@@ -19,7 +20,8 @@ export const AuthenticatedUserDropdown = () => {
       <Dropdown className="user-dropdown pr4">
         <Dropdown.Toggle
           as={AvatarButton}
-          src={authenticatedUser.profileImage}
+          // src={authenticatedUser.profileImage}
+          src={profileImage}
           id="user"
           variant="light"
           className="p-4"
@@ -57,6 +59,12 @@ export const AuthenticatedUserDropdown = () => {
           </Dropdown.Item>
           <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
             {formatMessage(messages.account)}
+          </Dropdown.Item>
+          <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
+            {formatMessage(messages.contactSupport)}
+          </Dropdown.Item>
+          <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
+            {formatMessage(messages.referYourCompany)}
           </Dropdown.Item>
           {getConfig().ORDER_HISTORY_URL && (
             <Dropdown.Item href={getConfig().ORDER_HISTORY_URL}>

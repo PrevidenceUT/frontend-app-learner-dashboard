@@ -3,5 +3,70 @@
 @import "~@edx/brand/paragon/overrides";
 
 a.course-card-title {
-  color: $black;
+  font-family: Lora;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1A00B9;
+}
+
+.content-type-text-and-icon {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.content-type-text {
+  margin-left: 5px; 
+  width: 60px;
+  height: 12px;
+  opacity: 0.5px;
+  font-family: Urbanist;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  // color: #002548;
+  color: #7F92A4;
+}
+
+.content-type-icon {
+  width: 14.08px;
+  height: 13px;
+  // color: #002548;
+  color: #7F92A4;
+  margin-left: 5px; 
+  // filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(150deg);
+}
+
+.content-type-text,
+.content-type-icon,
+.emoji-container {
+  display: inline;
+}
+
+.emoji-container {
+  background-color: #f0f0f0; /* Set the background color of the square */
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* Adjust the margin between the emoji and text */
+  margin-top: -8px;
+}
+
+.small {
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000B2;
 }

@@ -7,9 +7,24 @@
   align-items: center;
 }
 
+.content-picked-for-you-heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .course-list-title {
   font-size: $h2-font-size;
   margin: map-get($spacers, 3) 0;
+  font-family: Lora;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #002548;
 }
 
 .course-list-loading {
@@ -39,4 +54,218 @@
     font-size: $h3-font-size;
     margin: map-get($spacers, 2) 0;
   }
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px; /* Adjust as needed */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  margin-right: -400px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.horizontal-scroll-container > * {
+  margin-right: 10px;
+}
+
+.content-picked-for-you {
+  margin-top: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in each row */
+  // gap: 20px; /* Adjust the gap between cards */
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.grid-container > * {
+  margin-right: 10px;
+}
+
+.view-all-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-all-button {
+  /* Add styles for your "View All" button */
+  margin-top: 20px; /* Adjust the margin as needed */
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: #FFFFFF;
+  background: #4E1AEF;
+  box-shadow: 0px 2px 4px 0px #1A00B980;
+  width: 295px;
+  height: 54px;
+  padding: 18px, 30px, 18px, 30px;
+  border-radius: 8px;
+  gap: 10px;
+  border: none;
+
+}
+
+
+.continue-your-journey {
+  margin-top: 100px;
+}
+
+
+.based-on-this-text-container {
+  font-family: Urbanist;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+
+.we-recommend-these-text-container {
+  font-family: Urbanist;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1A00B9;
+
+}
+
+.based-on-this-text-container,
+.we-recommend-these-text-container {
+  display: inline;
+}
+
+.arrow-icon {
+  width: 130px; /* Adjust the width of the arrow as needed */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0 10px; /* Adjust the margin as needed to control the space around the arrow */
+  display: inline-block;
+}
+
+.view-all-card {
+  background-color: white;
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+  min-width: 400px !important;
+  min-height: 400px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.view-all-saved-content-text {
+  margin-bottom: 20px;
+  font-family: Lora;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1A00B9;
+  position: absolute;
+}
+
+.no-of-saved-content {
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  position: absolute;
+  top: 55%;
+}
+
+.view-all-card button {
+  background: #4E1AEF;
+  padding: 10px 20px;
+  border: none;
+  width: 300px;
+  height: 54px;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px #1A00B980;
+  position: absolute;
+  bottom: 10%;
+}
+
+.view-all-card button:hover {
+  background-color: darkblue; 
+}
+
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  width: 100px; 
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px 0px #0E006226;
+  bottom: 28%;
+}
+
+.saved-image-icon {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.explore-more-text {
+  margin-bottom: 20px;
+  font-family: Lora;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1A00B9;
+  position: absolute;
+}
+
+.we-are-suggesting-content-text {
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  position: absolute;
+  top: 55%;
 }

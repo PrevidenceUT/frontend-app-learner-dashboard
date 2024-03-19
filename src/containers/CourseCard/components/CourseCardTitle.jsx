@@ -10,6 +10,10 @@ const { courseTitleClicked } = track.course;
 export const CourseCardTitle = ({ cardId }) => {
   const { courseName } = reduxHooks.useCardCourseData(cardId);
   const { homeUrl } = reduxHooks.useCardCourseRunData(cardId);
+
+  // Truncate the title to 30 characters
+  const truncatedcourseName = courseName.length > 30 ? `${courseName.slice(0, 30)}...` : courseName;
+
   const handleTitleClicked = reduxHooks.useTrackCourseEvent(
     courseTitleClicked,
     cardId,
@@ -27,7 +31,7 @@ export const CourseCardTitle = ({ cardId }) => {
           data-testid="CourseCardTitle"
           onClick={handleTitleClicked}
         >
-          {courseName}
+          {truncatedcourseName}
         </a>
       )}
     </h3>

@@ -2,6 +2,7 @@
 
 .course-list-column {
   padding: 0 map-get($spacers, 4);
+  overflow: visible !important;
 }
 
 .sidebar-column {
@@ -18,4 +19,13 @@
       padding: 0 map-get($spacers, 3);
     }
   }
+}
+
+.container-fluid{
+  width: 100%;
+  padding-right: 115px !important; // Outer padding for main content to show 3 coards in each container
+  padding-left: 115px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  overflow: visible !important;
 }

@@ -8,6 +8,7 @@
   a {
     // needed to make the link not resize the header
     border-bottom: 2px solid transparent;
+    background-color: transparent;
   }
   .course-link {
     border-bottom: 2px solid !important;
@@ -32,7 +33,63 @@
   }
 }
 
+// Style for logo
 .logo {
   // copy from legacy dashboard
-  height: 40px;
+  height: 40px !important;
+  margin-left: 100px;
+}
+
+// Style around the user profile photo
+.btn.pgn__avatar-button-avatar{
+  background-color: transparent;
+  border: none;
+  margin-right: 100px;
+}
+
+.btn {
+  .a {
+    color: transparent;
+  }
+}
+
+.d-md-inline{
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7C9EBC;
+
+}
+
+.dropdown-toggle::after {
+  color: #7C9EBC;
+}
+
+.dropdown-item {
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 600 !important;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: right !important;
+  color: #004179 !important;
+}
+
+.dropdown-item:active {
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
+
+// User dropdown button hover style
+.btn-light:hover {
+  color: #454545;
+  background-color: #ececec !important;
+  border-color: #ececec !important;
+}
+
+.show > .btn-light.dropdown-toggle {
+  background-color: white !important;
 }
